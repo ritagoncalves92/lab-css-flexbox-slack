@@ -8,3 +8,290 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+/* Fundo */
+body {
+    background-color: #540B51;
+    font-family: 'Open Sans';
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 32px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* List Items */
+nav div ul {
+    display: flex;
+    gap: 28px;
+}
+
+nav div ul li {
+    display: block;
+}
+
+nav div ul li a {
+    color: #F3EAE2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav .topnav-action {
+    background-color: #F3EAE2;
+    color: #540B51;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* <div> à esquerda */
+nav div:first-child img {
+    width: 100px;
+}
+
+nav div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+/* <div> à direita */
+nav div:nth-child(2) {
+    display: flex;
+}
+
+nav div:nth-child(2) button {
+    background-color: transparent;
+    border: none;
+}
+
+/* Secção Hero Inicial */
+header div:nth-child(2)>img {
+    width: 100%;
+    position: relative;
+    top: -60px;
+}
+
+header {
+    display: flex;
+    width: 1440px;
+    height: 100vh;
+}
+
+header div {
+    flex: 1;
+}
+
+/* Secção À direita */
+header .hero-container+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Secção à Esquerda */
+header .hero-container h1 {
+    color: white;
+    font-size: 80px;
+    margin-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .hero-actions {
+    display: flex;
+}
+
+
+header img {
+    width: 80px;
+}
+
+header .hero-container p {
+    color: white;
+    font-size: 24px;
+}
+
+header .hero-container p span {
+    color: orange;
+    font-weight: 600;
+}
+
+
+/* add */
+.hero-actions button:first-child {
+    background-color: #F3EAE2;
+    color: #540B51;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    margin-right: 20px;
+    width: 250px;
+}
+
+/* add */
+.hero-actions button:last-child {
+    display: flex;
+    align-items: center;
+    background-color: #4285F4;
+    color: #F3EAE2;
+    padding: 8px;
+    gap: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    width: 250px;
+}
+
+/* add */
+.hero-actions img {
+    width: 26px;
+    display: flex;
+    background-color: #F3EAE2;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+
+main {
+    width: 100%;
+}
+
+/* colocar display: flex */
+.companies {
+    background-color: #f1eae3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.companies-logos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.companies img {
+    height: 40px;
+}
+
+.companies p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.teams-metrics {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+
+}
+
+.teams-metrics ul {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.teams-metrics ul li {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.teams-metrics h3 {
+    color: #540B51;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 0.25em;
+}
+
+.teams-metrics>p {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+
+.teams-metrics ul li p span {
+    font-size: 60px;
+    font-weight: 700;
+    color: #540B51;
+}
+
+.teams-metrics ul li p {
+    margin-bottom: 0;
+    
+}
+
+.teams-metrics ul li p:last-child{
+    margin-top: 0.25em;
+    font-weight: 700;
+}
+
+.welcome h3{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.welcome button.left{
+    background-color: white;
+    color: #540B51;
+    border-radius:4px;
+    padding: 16px 32px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.welcome button.right{
+    background-color: #540B51;
+    color: white;
+    border-radius: 4px;
+    padding: 16px 32px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid white;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.actions{
+    display: flex;
+    gap: 15px;
+}
+
+footer{
+    background-color: white;
+    width: 100%;
+}
+
